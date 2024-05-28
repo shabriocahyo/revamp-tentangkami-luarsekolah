@@ -1,0 +1,1 @@
+# tentangkami-luarsekolah
