@@ -1,0 +1,260 @@
+table,
+thead,
+tr,
+tbody,
+th,
+td {
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'LSSans-Regular';
+    src: url('../fonts/LSSans-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'LSSans-Regular';
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.position-relative {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.overlay h6 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.overlay p {
+    font-size: 2px;
+}
+
+.testimonials {
+    padding: 50px 0;
+}
+
+.head-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.testimonial-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.card {
+    border: none;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.blockquote {
+    font-size: 14px;
+    color: #333;
+    font-style: italic;
+    position: relative;
+}
+
+.blockquote:before {
+    content: "“";
+    font-size: 30px;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    color: #00bfa5;
+}
+
+.blockquote:after {
+    content: "”";
+    font-size: 30px;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    color: #00bfa5;
+}
+
+.testimonial-nav {
+    margin-top: 20px;
+}
+
+.nav-left,
+.nav-right {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #00bfa5;
+}
+
+#g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -78px 0 0 0 !important;
+    width: 302px !important;
+    height: 76px !important;
+    z-index: -999999;
+    opacity: 0;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 50vh;
+    overflow-x: hidden;
+}
+
+.float1 {
+    z-index: auto;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 80px;
+    right: 40px;
+    background-color: #00CC99;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float1 {
+    font-size: 24px;
+    margin-top: 18px;
+}
+
+a.float1+div.label-container1 {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.float1:hover+div.label-container1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.float2 {
+    z-index: 10000;
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    bottom: 80px;
+    right: 15px;
+    background-color: #00CC99;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float2 {
+    font-size: 17px;
+    margin-top: 18px;
+}
+
+a.float2+div.label-container1 {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.float2:hover+div.label-container1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* LOADING ANIMASI CARD */
+
+.cardLs {
+    margin: 10px;
+    /* width: 300px; */
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+    .image {
+        img {
+            max-width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    }
+
+    .content {
+        padding: 20px 0px;
+    }
+}
+
+.cardLs.is-loading {
+
+    .image,
+    h2,
+    p {
+        background: #eee;
+        background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+        border-radius: 5px;
+        background-size: 200% 100%;
+        animation: 1.5s shine linear infinite;
+    }
+
+    .image {
+        height: 200px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    h2 {
+        height: 30px;
+    }
+
+    p {
+        height: 70px;
+    }
+}
+
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}
