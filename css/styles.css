@@ -93,8 +93,8 @@ body {
 .blockquote {
     font-size: 14px;
     color: #333;
-    font-style: italic;
     position: relative;
+    text-align: left;
 }
 
 .blockquote:before {
@@ -257,4 +257,26 @@ a.float2:hover+div.label-container1 {
     to {
         background-position-x: -200%;
     }
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Ubah ke wrap jika ingin membuat baris baru saat tidak muat */
+    overflow-x: auto; /* Tambahkan scroll horizontal jika item tidak muat dalam satu baris */
+    gap: 20px; /* Jarak antara card */
+    padding: 20px; /* Tambahkan padding sesuai kebutuhan */
+}
+
+.card {
+    flex: 0 0 auto; /* Item tidak mengecil */
+    width: 300px; /* Atur lebar card sesuai kebutuhan */
+}
+
+.name {
+    font-size: 15px !important;
+}
+
+.info {
+    font-size: 10px !important;
 }
