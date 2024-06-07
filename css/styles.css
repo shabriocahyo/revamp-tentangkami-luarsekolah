@@ -262,11 +262,14 @@ a.float2:hover+div.label-container1 {
 .testimonial-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; /* Ubah ke wrap jika ingin membuat baris baru saat tidak muat */
-    overflow-x: auto; /* Tambahkan scroll horizontal jika item tidak muat dalam satu baris */
-    gap: 20px; /* Jarak antara card */
-    padding: 20px; /* Tambahkan padding sesuai kebutuhan */
+    flex-wrap: nowrap;
+    justify-content: center; /* Menengahkan konten */
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 0px;
 }
+
 
 .card {
     flex: 0 0 auto; /* Item tidak mengecil */
@@ -280,3 +283,70 @@ a.float2:hover+div.label-container1 {
 .info {
     font-size: 10px !important;
 }
+
+.testimonial-slider {
+    position: relative;
+}
+
+.testimonial-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.nav-left,
+.nav-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.nav-left {
+    left: 10px; /* Atur posisi sesuai kebutuhan */
+}
+
+.nav-right {
+    right: 10px; /* Atur posisi sesuai kebutuhan */
+}
+
+.testimonial-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.nav-left,
+.nav-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFC700;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.nav-left:hover,
+.nav-right:hover {
+    background-color: #ffd700; /* Warna kuning yang lebih terang saat hover */
+}
+
+.nav-left i,
+.nav-right i {
+    color: white;
+    font-size: 18px;
+}
+
+/* .col-12 {
+    margin-left: auto;
+    margin-right: auto;
+} */
