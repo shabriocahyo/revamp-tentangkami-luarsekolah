@@ -36,7 +36,6 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    /* background: rgba(0, 0, 0, 0.5); */
     color: white;
     padding: 10px;
     margin-left: 10px;
@@ -204,11 +203,8 @@ a.float2:hover+div.label-container1 {
     opacity: 1;
 }
 
-/* LOADING ANIMASI CARD */
-
 .cardLs {
     margin: 10px;
-    /* width: 300px; */
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -261,9 +257,9 @@ a.float2:hover+div.label-container1 {
 
 .testimonial-container {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center; /* Menengahkan konten */
+    justify-content: center;
     overflow-x: auto;
     gap: 20px;
     padding: 20px;
@@ -272,12 +268,12 @@ a.float2:hover+div.label-container1 {
 
 
 .card {
-    flex: 0 0 auto; /* Item tidak mengecil */
-    width: 300px; /* Atur lebar card sesuai kebutuhan */
+    flex: 0 0 auto;
+    width: 300px;
 }
 
 .card.fixed-width {
-    height: 500px; /* Sesuaikan lebar yang diinginkan */
+    height: 500px;
 }
 
 .name {
@@ -308,11 +304,11 @@ a.float2:hover+div.label-container1 {
 }
 
 .nav-left {
-    left: 10px; /* Atur posisi sesuai kebutuhan */
+    left: 10px;
 }
 
 .nav-right {
-    right: 10px; /* Atur posisi sesuai kebutuhan */
+    right: 10px;
 }
 
 .testimonial-nav {
@@ -341,7 +337,7 @@ a.float2:hover+div.label-container1 {
 
 .nav-left:hover,
 .nav-right:hover {
-    background-color: #ffd700; /* Warna kuning yang lebih terang saat hover */
+    background-color: #ffd700;
 }
 
 .nav-left i,
@@ -352,11 +348,11 @@ a.float2:hover+div.label-container1 {
 
 .testimonial-info {
     position: absolute;
-    bottom: 40px; /* Sesuaikan dengan jarak yang diinginkan dari bagian bawah card */
-    width: calc(100% - 40px); /* Lebar maksimal agar sesuai dengan card */
+    bottom: 40px;
+    width: calc(100% - 40px);
 }
 
 .no-margin li {
     padding-bottom: -20px;
-    margin-bottom: -20px; /* Menghilangkan margin antar item list */
+    margin-bottom: -20px;
 }
